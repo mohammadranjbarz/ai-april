@@ -36,7 +36,7 @@ async function generateStatistics(prompt) {
 
 // Main function to read tweets and generate statistics using ChatGPT
 async function analyzeTweets(command) {
-  const filePath = 'tweets.json'; // Replace with the path to your JSON file containing tweets
+  const filePath = './src/tweets.json'; // Replace with the path to your JSON file containing tweets
   const tweets = readTweetsFromFile(filePath);
   const tweetSummary = tweets.slice(1,65).map((tweet, index) => `Tweet ${index + 1}: ${tweet.text}`).join('\n');
 
