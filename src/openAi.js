@@ -42,7 +42,7 @@ async function analyzeTweets(command) {
 
   // Construct the prompt for ChatGPT
   // const prompt = `Analyze the following tweets related to projects and reactions to projects and measure popularity and generate statistics:\n${tweetSummary}\n\nStatistics:`;
-  const prompt = `Analyze the following for projects ${command} \n${tweetSummary}\n\nStatistics:`;
+  const prompt = `Analyze the following for projects ${command} \n${tweetSummary}\n\n`;
 
   const statistics = await generateStatistics(prompt);
   return statistics
